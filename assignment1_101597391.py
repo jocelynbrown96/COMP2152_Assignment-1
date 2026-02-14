@@ -35,7 +35,7 @@ friend_names = []
 
 for friend, minutes in workout_stats.items(): # Loop through the workout_stats dictionary to access each friend's name and their corresponding workout minutes.
     if not friend.endswith("_Total"):         # Only include friends' workout minutes, not totals.
-        friend_names.append(friend)          # Keep track of friend names for reference.
+        friend_names.append(friend)           # Keep track of friend names for reference.
         workout_list.append(list(minutes))    # Convert the tuple of minutes to a list and add to workout_list.
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
@@ -43,12 +43,12 @@ for friend, minutes in workout_stats.items(): # Loop through the workout_stats d
 # Extract and print the minutes for yoga and running for all friends:
 print("Yoga and Running Minutes for All Friends:")
 for i in range(len(workout_list)):                                     # Loop through each row of workout_list to access the yoga and running minutes for all friends.
-    print(f"{friend_names[i]}: Yoga = {workout_list[i][0]} minutes, " # Print the name of the friend along with their yoga and running minutes.
+    print(f"{friend_names[i]}: Yoga = {workout_list[i][0]} minutes, "  # Print the name of the friend along with their yoga and running minutes.
            f"Running = {workout_list[i][1]} minutes")
 
 # Extract and print the minutes for weightlifting for the last two friends:
 print("\nWeightlifting Minutes for Last Two Friends:")
-for i in range(-2, 0): # Loop through the last two rows of workout_list to access the weightlifting minutes for the last two friends.
+for i in range(-2, 0):                           # Loop through the last two rows of workout_list to access the weightlifting minutes for the last two friends.
     print(f"{friend_names[i]}: Weightlifting = " # Print the name of the friend along with their weightlifting minutes.
           f"{workout_list[i][2]} minutes")
 
