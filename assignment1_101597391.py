@@ -75,6 +75,7 @@ if user_input in workout_stats and not user_input.endswith("_Total"): # Ensure w
     print(f"Total workout minutes: {total}")         # Print the total workout minutes for the specified friend.
 else:
     print(f"Friend {user_input} not found in the records.") # Inform the user if the entered friend's name does not exist in the dictionary.
+    
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # Step i: Friend with highest and lowest total workout minutes.
 highest_total = 0           # Initialize to 0 since we are looking for the maximum value.
